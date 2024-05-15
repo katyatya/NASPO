@@ -1,3 +1,7 @@
-FROM jenkins/jenkins:lts
-EXPOSE 50000
-CMD [ "jenkins.sh" ]
+FROM node:14-alpine
+WORKDIR /app
+COPY  package*.json ./
+RUN npm install
+COPY . .
+EXPOSE 3000
+CMD [ "npm","start" ]
