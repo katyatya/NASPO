@@ -1,6 +1,15 @@
 {
 	"name": "my_app",
 	"version": "1.0.0",
+	"main": "1.js",
+	"keywords": [
+		"nodejs",
+		"express",
+		"docker"
+	],
+	"dependencies": {
+		"express": "^4.16.4"
+	},
 	"scripts": {
 		"start": "node 1.js"
 	}
